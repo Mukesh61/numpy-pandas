@@ -1,0 +1,31 @@
+'''
+Different type of data can be kept inside list, However if we want to perform any operation on that list then we have to access each item 
+one by one. Let's increase value of all item in list by 10.
+'''
+sample_list=[1,2,3,4]
+for item in sample_list:
+    print(type(item))
+    
+# increase value of sample_list by 10
+for index,item in enumerate(sample_list):
+    sample_list[index]=item+10
+print(sample_list)
+
+#let's do the same thing is numpy array to check how easy it is there
+
+import numpy as np
+numpy_array=np.array([1,2,3,4])
+#iterate over the numpy_array 
+for item in numpy_array:
+    print(type(item))
+    
+#increase value by 10 like any normal mathematical operation
+print(numpy_array+10)
+
+#output [11 12 13 14]
+
+print(numpy_array*5)
+#[ 5 10 15 20]
+
+
+
