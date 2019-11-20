@@ -1,0 +1,80 @@
+# Example 1 how to create numpy array with different data types, to check the datatype of numpy object result_type() function has been used
+
+import numpy as np
+#numpy_array = np.array([1,9,4,5], dtype = int)
+#numpy_array = np.array([1,9,4,5], dtype = float)
+#numpy_array = np.array([1,9,4,5], dtype = str)
+#numpy_array = np.array([1,9,4,5], dtype = complex)
+numpy_array = np.array([1,9,4,5], dtype = bool)
+print(numpy_array)
+# [1 9 4 5]
+# [1. 9. 4. 5.]
+# ['1' '9' '4' '5']
+# [1.+0.j 9.+0.j 4.+0.j 5.+0.j]
+# [ True  True  True  True]
+print(type(numpy_array))
+# <class 'numpy.ndarray'>
+# <class 'numpy.ndarray'>
+# <class 'numpy.ndarray'>
+# <class 'numpy.ndarray'>
+# <class 'numpy.ndarray'>
+print(np.result_type(numpy_array))
+# int32 byte integer
+# float64
+# <U1
+# complex128
+# bool
+
+# Example 2: arrange and linespace
+
+#arrange and linespace
+print(np.arange(0, 10, 2, dtype = np.float64))
+# step =2, [0. 2. 4. 6. 8.]
+print(np.arange(0, 10, 3, dtype = np.float64))
+# step = 3, [0. 3. 6. 9.]
+print(np.arange(0, 10, 2.3, dtype = np.float64))
+#step = 2.3, [0.  2.3 4.6 6.9 9.2]
+
+'''Basically arrange ask for a step, it is like a person start walking from a place to reach destination place, condition is 
+he can take a step with given step size'''
+
+print(np.linspace(0, 10, 5, dtype = np.float64))
+# [ 0.   2.5  5.   7.5 10. ]
+print(np.linspace(0, 100, 5, dtype = np.float64))
+# [  0.  25.  50.  75. 100.]
+print(np.linspace(0, 20, 4, dtype = np.float64))
+# [ 0.          6.66666667 13.33333333 20.        ]
+
+'''linspace is like, suppose few friend plan for a journey from place A to place B, now all of them have to drive car for equal
+distances. linspace will certainly helps them'''
+
+#Example 3. Matrix  
+''' array reshape and matrix '''
+print(np.array([6,5,4,3,2,1]).reshape(2,3))
+# [[6 5 4]
+# [3 2 1]]
+''' inbuilt function matrix, cool '''
+print(np.matrix([[4,5,6],
+                [8,4,3]]))
+# [[4 5 6]
+#  [8 4 3]]
+
+# Identity matrix
+print(np.eye(4))
+# [[1. 0. 0. 0.]
+#  [0. 1. 0. 0.]
+#  [0. 0. 1. 0.]
+#  [0. 0. 0. 1.]]
+
+# matrix with all value zeros
+print( np.zeros( (3,3) ) )
+# [[0. 0. 0.]
+#  [[0. 0. 0.]
+#  [[0. 0. 0.]
+
+# matrix with all ones
+print(np.ones( (4,3), dtype = np.float64 ))
+# [[1. 1. 1.]
+#  [1. 1. 1.]
+#  [1. 1. 1.]
+#  [1. 1. 1.]]
