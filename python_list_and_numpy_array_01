@@ -1,0 +1,17 @@
+python_list=[1,2,3,4]
+import sys
+sys.getsizeof(python_list) #96, 24*4, 24 for each number 
+
+import numpy as np
+numpy_array=np.array(python_list)
+numpy_array.nbytes #16, 4 bytes each
+
+#example of datatypes 
+python_list=[1,'Rachel',2,'Monica',3,'Joe',4,1+2j,True]
+print(type(python_list[0]),type(python_list[1]),type(python_list[7]),type(python_list[8]))
+#<class 'int'> <class 'str'> <class 'complex'> <class 'bool'>
+
+#numpy example 
+numpy_array=np.array(python_list)
+print(type(numpy_array[0]),type(numpy_array[1]),type(numpy_array[7]),type(numpy_array[8]))
+#<class 'numpy.str_'> <class 'numpy.str_'> <class 'numpy.str_'> <class 'numpy.str_'>
