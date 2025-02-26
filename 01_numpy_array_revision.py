@@ -1,4 +1,6 @@
 """
+Just remember it's called array, not list(which can keep hetrogeneous data)
+
 Numpy Array: 
 1. Fixed size
 2. Single Data type
