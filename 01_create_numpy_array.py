@@ -11,20 +11,20 @@ python_list = [1, 2, 3, 4, 5, 6]
 numpy_array = np.array(python_list)
 print(numpy_array)
 
-print(numpy_array.ndim)  # 1
-print(numpy_array.shape) # (6,)
-print(numpy_array.size) # 6
-print(numpy_array.dtype) # int64
+numpy_array.ndim   # 1
+numpy_array.shape  # (6,)
+numpy_array.size   # 6
+numpy_array.dtype  # int64
 
 
 python_list = [[1, 2, 3, 4, 5, 6], [7, 8, 9, 10, 11, 12]]
 numpy_array = np.array(python_list)
 print(numpy_array)
 
-print(numpy_array.ndim) # 2
-print(numpy_array.shape) # (2, 6)
-print(numpy_array.size) # 12
-print(numpy_array.dtype) # int64
+numpy_array.ndim   # 2
+numpy_array.shape  # (2, 6)
+numpy_array.size   # 12
+numpy_array.dtype  # int64
 
 np.ones(5,) #array([1., 1., 1., 1., 1.])
 
